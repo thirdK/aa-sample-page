@@ -1,0 +1,59 @@
+/* ══════════════════════════════
+   PROGRESS BAR
+══════════════════════════════ */
+#prog { position:fixed; top:0; left:0; z-index:200; height:2px; width:0%; background:linear-gradient(90deg,#4facfe,#00f2fe); transition:width .08s linear; }
+
+/* ══════════════════════════════
+   NAV
+══════════════════════════════ */
+.nav {
+  position:fixed; top:0; width:100%; z-index:100;
+  height:58px;
+  background:rgba(4,8,20,.92);
+  border-bottom:1px solid var(--bd);
+  backdrop-filter:blur(20px);
+  display:flex; align-items:center;
+  padding:0 var(--px);
+  gap:12px;
+}
+.nav-logo { font-weight:900; font-size:17px; letter-spacing:-.3px; color:var(--t1); display:flex; align-items:center; gap:5px; margin-right:auto; }
+.nav-logo span { color:var(--cyan); }
+.nav-cta {
+  font-size:12px; font-weight:700;
+  padding:7px 16px; border-radius:100px;
+  background:var(--cyan); color:#040814;
+  white-space:nowrap;
+}
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.footer { background:#02040a; border-top:1px solid var(--bd); padding:36px var(--px) 28px; }
+.footer-logo { display:flex; align-items:center; gap:5px; font-size:16px; font-weight:900; color:var(--t1); margin-bottom:10px; }
+.footer-logo span { color:var(--cyan); }
+.footer-desc { font-size:12px; color:var(--t4); line-height:1.7; margin-bottom:24px; }
+.footer-cols { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px; }
+.footer-col-title { font-size:10.5px; font-weight:700; letter-spacing:.1em; color:var(--t3); text-transform:uppercase; margin-bottom:10px; }
+.footer-links { display:flex; flex-direction:column; gap:8px; }
+.footer-links a { font-size:12.5px; color:var(--t4); }
+.footer-bottom { border-top:1px solid var(--bd); padding-top:16px; display:flex; flex-direction:column; gap:10px; }
+.footer-copy { font-size:11.5px; color:var(--t4); }
+.footer-policy { display:flex; gap:14px; }
+.footer-policy a { font-size:11.5px; color:var(--t4); }
+
+/* ══════════════════════════════
+   MOBILE STICKY CTA
+══════════════════════════════ */
+.mobile-cta {
+  position:fixed; bottom:0; left:0; right:0; z-index:100;
+  padding:10px var(--px) calc(10px + env(safe-area-inset-bottom));
+  background:rgba(4,8,20,.97);
+  border-top:1px solid var(--bd);
+  backdrop-filter:blur(20px);
+}
+.mcta-top { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.mcta-disc  { font-size:11.5px; font-weight:700; padding:3px 8px; border-radius:5px; background:var(--red); color:#fff; }
+.mcta-price { font-size:20px; font-weight:900; color:var(--t1); }
+.mcta-price small { font-size:12px; font-weight:500; }
+.mcta-note  { font-size:11px; color:var(--t3); margin-left:auto; }
+.btn-mcta   { display:block; width:100%; padding:14px; border-radius:var(--r); font-size:14.5px; font-weight:800; background:#fff; color:#040814; text-align:center; letter-spacing:-.2px; }

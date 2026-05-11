@@ -1,0 +1,29 @@
+/* ══════════════════════════════
+   REVIEWS (LIGHT)
+══════════════════════════════ */
+.rv-summary {
+  display:flex; align-items:center; gap:14px;
+  padding:18px; border-radius:var(--r-lg);
+  background:var(--lt-bg-2); border:1px solid var(--lt-bd);
+  margin-bottom:20px;
+  box-shadow:0 1px 3px rgba(15,23,42,.04);
+}
+.rv-score { font-size:38px; font-weight:900; color:var(--yellow); line-height:1; }
+.rv-stars { color:var(--yellow); font-size:14px; margin-bottom:2px; }
+.rv-div-line { width:1px; height:40px; background:var(--lt-bd); flex-shrink:0; }
+.rv-meta-title { font-size:13px; font-weight:700; color:var(--lt-t1); }
+.rv-meta-sub   { font-size:11px; color:var(--lt-t3); }
+
+.rv-list { display:flex; flex-direction:column; gap:12px; }
+.rv-card {
+  padding:20px; border-radius:var(--r-lg);
+  background:var(--lt-bg-2); border:1px solid var(--lt-bd);
+  box-shadow:0 1px 3px rgba(15,23,42,.04);
+}
+.rv-stars-sm { color:var(--yellow); font-size:13px; margin-bottom:10px; }
+.rv-text { font-size:13px; color:var(--lt-t1); line-height:1.7; margin-bottom:14px; }
+.rv-author { display:flex; align-items:center; gap:10px; padding-top:12px; border-top:1px solid var(--lt-bd); }
+.rv-av { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; flex-shrink:0; }
+.rv-name  { font-size:13px; font-weight:700; color:var(--lt-t1); }
+.rv-title { font-size:11.5px; color:var(--lt-t3); }
+

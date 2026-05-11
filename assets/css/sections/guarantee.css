@@ -1,0 +1,15 @@
+/* ══════════════════════════════
+   GUARANTEE (DARK)
+══════════════════════════════ */
+.guarantee {
+  display:flex; gap:16px; align-items:flex-start;
+  padding:22px 18px; border-radius:var(--r-lg);
+  border:1px solid rgba(34,197,94,.2); background:var(--bg-1);
+}
+.gua-ico { font-size:30px; flex-shrink:0; }
+.gua-title { font-size:16px; font-weight:800; color:var(--t1); margin-bottom:7px; }
+.gua-title span { color:var(--green); }
+.gua-desc { font-size:12.5px; color:var(--t2); line-height:1.7; margin-bottom:12px; }
+.gua-badges { display:flex; flex-wrap:wrap; gap:7px; }
+.gua-badge { font-size:11px; color:var(--t3); background:rgba(255,255,255,.04); border:1px solid var(--bd); padding:4px 10px; border-radius:100px; }
+

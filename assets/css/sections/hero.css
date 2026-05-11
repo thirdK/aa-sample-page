@@ -1,0 +1,50 @@
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.hero {
+  padding:80px var(--px) 40px;
+  position:relative; overflow:hidden;
+  background-image:
+    linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+  background-size:32px 32px;
+}
+.hero-glow-1 { position:absolute; width:320px; height:320px; top:-60px; left:-60px; border-radius:50%; background:radial-gradient(circle,rgba(79,172,254,.1),transparent 70%); pointer-events:none; filter:blur(40px); }
+.hero-glow-2 { position:absolute; width:240px; height:240px; bottom:0; right:-40px; border-radius:50%; background:radial-gradient(circle,rgba(168,85,247,.07),transparent 70%); pointer-events:none; filter:blur(40px); }
+
+.badge-eb {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:7px 14px; border-radius:100px;
+  background:var(--red-bg); border:1px solid var(--red-bd);
+  color:var(--red); font-size:12px; font-weight:700;
+  margin-bottom:18px; position:relative; z-index:1;
+}
+.badge-dot { position:relative; width:9px; height:9px; flex-shrink:0; }
+.badge-dot span { position:absolute; inset:0; border-radius:50%; background:var(--red); }
+.badge-dot span.ping { animation:ping 1.4s cubic-bezier(0,0,.2,1) infinite; }
+
+.hero-title { font-size:28px; font-weight:900; line-height:1.2; letter-spacing:-.6px; margin-bottom:14px; position:relative; z-index:1; }
+
+.hero-lead { font-size:14px; color:var(--t2); line-height:1.75; margin-bottom:18px; position:relative; z-index:1; }
+
+.hero-chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; position:relative; z-index:1; }
+.chip {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 12px; border-radius:8px;
+  background:rgba(255,255,255,.04); border:1px solid var(--bd);
+  font-size:12px; color:var(--t2);
+}
+.chip svg { width:13px; height:13px; color:var(--cyan); flex-shrink:0; }
+
+.viewer {
+  display:flex; align-items:center; gap:8px;
+  font-size:12.5px; color:var(--t2);
+  margin-bottom:24px; position:relative; z-index:1;
+}
+.viewer-dot { width:7px; height:7px; border-radius:50%; background:var(--green); flex-shrink:0; animation:ping-g 1.6s infinite; }
+
+.corp { border-top:1px solid var(--bd); padding-top:20px; position:relative; z-index:1; }
+.corp-label { font-size:10px; font-weight:700; letter-spacing:.1em; color:var(--t4); text-transform:uppercase; margin-bottom:12px; }
+.corp-logos { display:flex; flex-wrap:wrap; gap:14px; align-items:center; opacity:.28; filter:grayscale(1); }
+.corp-logos span { font-size:14px; font-weight:900; letter-spacing:-.5px; }
+

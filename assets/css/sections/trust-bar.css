@@ -1,0 +1,10 @@
+/* ══════════════════════════════
+   TRUST BAR
+══════════════════════════════ */
+.trust-bar { background:var(--bg-1); border-top:1px solid var(--bd); border-bottom:1px solid var(--bd); overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.trust-inner { display:flex; min-width:480px; padding:0 var(--px); }
+.trust-item { flex:1; padding:14px 12px; text-align:center; border-right:1px solid var(--bd); }
+.trust-item:last-child { border-right:none; }
+.trust-num { font-size:18px; font-weight:900; color:var(--cyan); line-height:1; margin-bottom:3px; }
+.trust-lbl { font-size:10px; color:var(--t3); }
+

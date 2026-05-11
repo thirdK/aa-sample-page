@@ -1,0 +1,1509 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>AI 영상 크리에이터 10일 과정 | 코리아AI아카데미</title>
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/sections/hero.css" />
+    <link rel="stylesheet" href="assets/css/sections/purchase-card.css" />
+    <link rel="stylesheet" href="assets/css/sections/trust-bar.css" />
+    <link rel="stylesheet" href="assets/css/sections/why.css" />
+    <link rel="stylesheet" href="assets/css/sections/pain.css" />
+    <link rel="stylesheet" href="assets/css/sections/projects.css" />
+    <link rel="stylesheet" href="assets/css/sections/roadmap.css" />
+    <link rel="stylesheet" href="assets/css/sections/sneak.css" />
+    <link rel="stylesheet" href="assets/css/sections/curriculum.css" />
+    <link rel="stylesheet" href="assets/css/sections/instructor.css" />
+    <link rel="stylesheet" href="assets/css/sections/reviews.css" />
+    <link rel="stylesheet" href="assets/css/sections/faq.css" />
+    <link rel="stylesheet" href="assets/css/sections/pricing.css" />
+  </head>
+  <body>
+    <div id="prog"></div>
+
+    <!-- ══════════ NAV ══════════ -->
+    <nav class="nav">
+      <div class="nav-logo">
+        <svg
+          width="18"
+          height="18"
+          fill="none"
+          stroke="var(--cyan)"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            stroke-linejoin="round"
+          />
+        </svg>
+        코리아AI<span>아카데미</span>
+      </div>
+      <button
+        class="nav-cta shim"
+        onclick="
+          document
+            .getElementById('pricing')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        수강 신청 →
+      </button>
+    </nav>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section id="hero" class="hero">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="badge-eb">
+        <span class="badge-dot"><span class="ping"></span><span></span></span>
+        얼리버드 2차 · 남은 수량
+        <strong style="color: #fff; margin-left: 2px">14개</strong>
+      </div>
+
+      <h1 class="hero-title">
+        AI 영상,<br />상상을 현실로<br />
+        <span class="g-cyan">단 10일 만에 완성하는</span><br />
+        AI영상 크리에이터
+      </h1>
+
+      <p class="hero-lead">
+        스토리 기획부터 이미지·음악·영상 제작, 최종 편집까지.<br />
+        생성형 AI 도구로
+        <strong style="color: var(--t1)">나만의 숏폼·커머셜 영상</strong>을 직접
+        완성하세요.
+      </p>
+
+      <div class="hero-chips">
+        <div class="chip">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12,6 12,12 16,14" />
+          </svg>
+          30시간 · 10회차
+        </div>
+        <div class="chip">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            />
+          </svg>
+          4.9★ · 2,847명
+        </div>
+      </div>
+
+      <div class="viewer">
+        <span class="viewer-dot"></span>
+        지금 <strong id="viewer-cnt" style="color: var(--t1)">38</strong>명이
+        보고 있습니다
+      </div>
+    </section>
+
+    <!-- ══════════ PURCHASE CARD ══════════ -->
+    <div class="hero-purchase fu">
+      <div class="hp-thumb">
+        <span style="font-size: 38px; position: relative; z-index: 1">🎬</span>
+        <div class="hp-play">
+          <div class="hp-play-outer">
+            <div class="hp-play-inner">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hp-body">
+        <div class="hp-timer">
+          <span style="font-size: 14px">⏰</span>
+          <span class="hp-timer-label">얼리버드 마감까지</span>
+          <span class="hp-timer-val" id="side-timer">03:11:58</span>
+        </div>
+        <div class="hp-gauge-hd">
+          <span>남은 수량</span><span>14개 / 100개</span>
+        </div>
+        <div class="hp-gauge-track">
+          <div class="hp-gauge-fill" style="width: 86%"></div>
+        </div>
+        <div class="hp-orig">500,000원</div>
+        <div class="hp-row">
+          <span class="hp-disc">30% OFF</span>
+          <span class="hp-price">350,000<small>원</small></span>
+        </div>
+        <div class="hp-install">
+          💳 12개월 무이자 시 월
+          <strong style="color: var(--cyan)">29,166원</strong>
+        </div>
+        <button
+          class="btn-buy shim"
+          onclick="
+            document
+              .getElementById('pricing')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          수강 신청하기 →
+        </button>
+        <div class="hp-specs">
+          <div class="hp-spec">
+            <div class="hp-spec-k">📦 구성</div>
+            <div class="hp-spec-v">10회차 · 30시간</div>
+          </div>
+          <div class="hp-spec">
+            <div class="hp-spec-k">⏱ 수업</div>
+            <div class="hp-spec-v">회차당 3시간</div>
+          </div>
+          <div class="hp-spec">
+            <div class="hp-spec-k">🎓 난이도</div>
+            <div class="hp-spec-v">누구나 가능</div>
+          </div>
+          <div class="hp-spec">
+            <div class="hp-spec-k">🎯 결과물</div>
+            <div class="hp-spec-v">포트폴리오 완성</div>
+          </div>
+        </div>
+        <div class="hp-eb">⚡ 정식 오픈 후 가격 즉시 인상</div>
+      </div>
+    </div>
+
+    <!-- ══════════ TRUST BAR ══════════ -->
+    <div class="trust-bar">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <div class="trust-num" data-target="2847">0</div>
+          <div class="trust-lbl">누적 수강생</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">4.9★</div>
+          <div class="trust-lbl">평균 평점</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num" data-target="847">0</div>
+          <div class="trust-lbl">수강 후기</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">98%</div>
+          <div class="trust-lbl">재구매 의향</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">21년</div>
+          <div class="trust-lbl">강사 경력</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── DIVIDER ── -->
+    <div class="div-to-light"></div>
+
+    <!-- ══════════ WHY (LIGHT) ══════════ -->
+    <section id="why" class="sec sec-light fu">
+      <div class="sec-head">
+        <span class="sec-label">WHY NOW?</span>
+        <h2>왜 지금, <span class="g-cyan-dk">AI 영상 크리에이터</span>인가</h2>
+        <p>
+          도구를 체험하는 것과 완성도 있는 결과물로 연결하는 것은 전혀 다릅니다
+        </p>
+      </div>
+      <div class="why-list">
+        <div class="why-card">
+          <div class="why-illust">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12,6 12,12 16,14" />
+            </svg>
+          </div>
+          <h3>도구 체험 ≠ 결과물 완성</h3>
+          <p>
+            AI 툴을 하나씩 써보는 것과, 완성도 있는 영상 결과물로 연결하는 것은
+            전혀 다른 문제입니다.
+          </p>
+          <div class="why-stat">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13 7L6 14l-3-3" />
+              <path d="M21 7l-7 7" />
+            </svg>
+            전 과정 연결 실습
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-illust">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3>기획~편집 전 과정 연결</h3>
+          <p>
+            스토리 기획부터 이미지·음악·영상 제작, 최종 편집까지 단계별 흐름을
+            직접 경험합니다.
+          </p>
+          <div class="why-stat">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13 7L6 14l-3-3" />
+            </svg>
+            10일 완성 커리큘럼
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-illust">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>포트폴리오·공모전까지</h3>
+          <p>
+            완성된 결과물을 개인 포트폴리오와 온라인 채널에 게시하고, 공모전
+            도전까지 이어집니다.
+          </p>
+          <div class="why-stat">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13 7L6 14l-3-3" />
+            </svg>
+            실전형 역량 완성
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="div-to-dark"></div>
+
+    <!-- ══════════ PAIN / BEFORE-AFTER (DARK) ══════════ -->
+    <section id="before" class="sec fu">
+      <div class="sec-head">
+        <span class="sec-label">PAIN POINT</span>
+        <h2>지금 이런 상황인가요?</h2>
+        <p>이런 분께 특히 잘 맞는 과정입니다</p>
+      </div>
+
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-x">✗</div>
+          <h4>AI 영상 제작 전 과정을 경험해보지 못했다</h4>
+        </div>
+        <div class="pain-card">
+          <div class="pain-x">✗</div>
+          <h4>생성형 AI 도구를 개별적으로만 써봤다</h4>
+        </div>
+        <div class="pain-card">
+          <div class="pain-x">✗</div>
+          <h4>숏폼·커머셜 영상 결과물 제작 경험이 없다</h4>
+        </div>
+        <div class="pain-card">
+          <div class="pain-x">✗</div>
+          <h4>결과물을 실생활·업무에 연결하기 어렵다</h4>
+        </div>
+      </div>
+
+      <!-- Before -->
+      <div class="ba-card ba-before">
+        <div class="ba-label">😵 Before</div>
+        <div class="ba-item">
+          <div class="ba-ico">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12,6 12,12 16,14" />
+            </svg>
+          </div>
+          <h3>AI 영상 제작 전 과정 경험 부재</h3>
+        </div>
+        <div class="ba-item">
+          <div class="ba-ico">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+              />
+            </svg>
+          </div>
+          <h3>생성형 AI 도구 개별 체험에 그침</h3>
+        </div>
+        <div class="ba-item">
+          <div class="ba-ico">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414A1 1 0 0119 9.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+          </div>
+          <h3>결과물을 포트폴리오로 연결하지 못함</h3>
+        </div>
+      </div>
+
+      <div class="ba-divider">
+        <div class="ba-arrow-ico">
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- After -->
+      <div class="ba-card ba-after">
+        <div class="ba-label">🚀 After</div>
+        <div class="ba-item">
+          <div class="ba-ico">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3>기획~편집 전 과정 단계별 체험</h3>
+        </div>
+        <div class="ba-item">
+          <div class="ba-ico">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <h3>최신 AI 도구 12종 직접 활용</h3>
+        </div>
+        <div class="ba-item">
+          <div class="ba-ico">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              />
+            </svg>
+          </div>
+          <h3>나만의 AI 영상 포트폴리오 완성</h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="div-to-light"></div>
+
+    <!-- ══════════ PROJECTS (LIGHT) ══════════ -->
+    <section id="projects" class="sec sec-light fu">
+      <div class="sec-head">
+        <span class="sec-label">PROJECTS</span>
+        <h2>수료 시 <span class="g-cyan-dk">내 손에 남는 결과물</span></h2>
+        <p>10일 동안 직접 만들게 될 3가지 AI 콘텐츠</p>
+      </div>
+      <div class="proj-list">
+        <!-- Card 1: 키비주얼 팩토리 (이미지) -->
+        <div class="proj-card">
+          <div class="proj-top">
+            <div
+              class="proj-icon"
+              style="background: rgba(168, 85, 247, 0.12); font-size: 24px"
+            >
+              🎨
+            </div>
+            <span class="proj-badge">이미지</span>
+          </div>
+          <h3>커머셜 키비주얼 무한 생성 팩토리</h3>
+          <p>
+            프롬프트 한 줄로 캐릭터 일관성 있는 광고·키비주얼을 끝없이
+            찍어냅니다.
+          </p>
+          <div class="proj-tool-row">
+            <span class="tool-pill"><span class="ico">💬</span>ChatGPT</span>
+            <span class="tool-pill"><span class="ico">🖼️</span>Flow</span>
+            <span class="tool-pill"
+              ><span class="ico">🎨</span>Dreamina AI</span
+            >
+          </div>
+          <div class="proj-portfolio">
+            <img
+              src="assets/images/portfolio-1.png"
+              alt="강사 포트폴리오 — AI 키비주얼 예시"
+              loading="lazy"
+            />
+            <div class="proj-portfolio-cap">
+              강사 작품 — 실제 수강 후 제작 가능한 수준
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: 사운드트랙 스튜디오 (사운드) -->
+        <div class="proj-card">
+          <div class="proj-top">
+            <div
+              class="proj-icon"
+              style="background: rgba(34, 197, 94, 0.12); font-size: 24px"
+            >
+              🎵
+            </div>
+            <span class="proj-badge">사운드</span>
+          </div>
+          <h3>나만의 AI 사운드트랙 스튜디오</h3>
+          <p>
+            주제곡·BGM·보이스·효과음까지 영상에 필요한 모든 사운드를 직접
+            생성합니다.
+          </p>
+          <div class="proj-tool-row">
+            <span class="tool-pill"><span class="ico">🎵</span>Suno AI</span>
+            <span class="tool-pill"><span class="ico">🎤</span>ElevenLabs</span>
+            <span class="tool-pill"
+              ><span class="ico">🎙️</span>Supertone Play</span
+            >
+          </div>
+        </div>
+
+        <!-- Card 3: 숏폼·커머셜 영상 포트폴리오 (영상) -->
+        <div class="proj-card">
+          <div class="proj-top">
+            <div
+              class="proj-icon"
+              style="background: rgba(249, 115, 22, 0.12); font-size: 24px"
+            >
+              🎬
+            </div>
+            <span class="proj-badge">영상</span>
+          </div>
+          <h3>AI 숏폼·커머셜 영상 포트폴리오</h3>
+          <p>
+            Image-to-Video로 AI 비디오를 만들고 CapCut으로 편집해 공모전·채널
+            게시 가능한 결과물을 완성합니다.
+          </p>
+          <div class="proj-tool-row">
+            <span class="tool-pill"><span class="ico">🎞️</span>Kling AI</span>
+            <span class="tool-pill"><span class="ico">📹</span>Veo3</span>
+            <span class="tool-pill"><span class="ico">✂️</span>CapCut</span>
+          </div>
+          <div class="proj-portfolio">
+            <img
+              src="assets/images/portfolio-2.png"
+              alt="강사 포트폴리오 — AI 숏폼 영상 예시"
+              loading="lazy"
+            />
+            <div class="proj-portfolio-cap">
+              강사 작품 · @상상력공장 (SNEAK PEEK 영상도 함께 확인)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="div-to-dark"></div>
+
+    <!-- ══════════ ROADMAP (DARK) ══════════ -->
+    <section id="roadmap" class="sec fu">
+      <div class="sec-head">
+        <span class="sec-label">ROADMAP</span>
+        <h2><span class="g-cyan">10일 완성</span> 학습 로드맵</h2>
+        <p>기획 → 이미지 → 사운드 → AI비디오 → 편집 → 포트폴리오</p>
+      </div>
+      <div class="roadmap">
+        <div class="rm-item">
+          <div class="rm-dot">1</div>
+          <div>
+            <div class="rm-week">STEP 01</div>
+            <h3>AI 영상 제작의 기초 이해</h3>
+            <p>AI 영상 제작 전체 흐름 파악, 스토리·시나리오 프롬프트 작성법</p>
+            <div class="tags">
+              <span class="tag">1–2일차</span><span class="tag">ChatGPT</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item">
+          <div class="rm-dot">2</div>
+          <div>
+            <div class="rm-week">STEP 02</div>
+            <h3>이미지 제작과 연출 심화</h3>
+            <p>
+              AI 이미지 생성·합성, 키비주얼 제작, 커머셜 이미지 캐릭터 일관성
+            </p>
+            <div class="tags">
+              <span class="tag">3–4일차</span
+              ><span class="tag">Flow · Dreamina AI</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item">
+          <div class="rm-dot">3</div>
+          <div>
+            <div class="rm-week">STEP 03</div>
+            <h3>사운드와 비디오 제작</h3>
+            <p>AI 음악·보이스·효과음 제작, 이미지 소스 기반 AI 비디오 생성</p>
+            <div class="tags">
+              <span class="tag">5–6일차</span
+              ><span class="tag">Suno AI · Kling AI</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item">
+          <div class="rm-dot">4</div>
+          <div>
+            <div class="rm-week">STEP 04</div>
+            <h3>최종 편집과 숏폼 제작</h3>
+            <p>미디어 소스 편집, 숏폼·커머셜 영상 완성, 트렌디 사례 분석</p>
+            <div class="tags">
+              <span class="tag">7–8일차</span
+              ><span class="tag">CapCut · Veo3 · Grok</span>
+            </div>
+          </div>
+        </div>
+        <div class="rm-item">
+          <div class="rm-dot">5</div>
+          <div>
+            <div class="rm-week">STEP 05</div>
+            <h3>포트폴리오 완성 및 피드백</h3>
+            <p>개인 포트폴리오 제작, 최종 결과물 발표, 개선안 공유</p>
+            <div class="tags">
+              <span class="tag">9–10일차</span><span class="tag">최종 PT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SNEAK PEEK (DARK) ══════════ -->
+    <section class="sec sec-alt fu">
+      <div class="sec-head">
+        <span class="sec-label">SNEAK PEEK</span>
+        <h2>강사 작품 미리보기</h2>
+        <p>이 과정을 수료하면 이런 영상을 만들 수 있습니다</p>
+      </div>
+      <div
+        style="
+          max-width: 720px;
+          margin: 0 auto;
+          aspect-ratio: 16 / 9;
+          border-radius: 12px;
+          overflow: hidden;
+          background: #000;
+        "
+      >
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/eXreH-Bd0BE"
+          title="강사 작품 — AI 영상 크리에이터 과정"
+          style="width: 100%; height: 100%; border: 0; display: block"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <div class="div-to-light"></div>
+
+    <!-- ══════════ CURRICULUM (LIGHT) ══════════ -->
+    <section id="curriculum" class="sec sec-light fu">
+      <div class="sec-head">
+        <span class="sec-label">CURRICULUM</span>
+        <h2>빈틈없이 꽉 채운 <span class="g-cyan-dk">10일 커리큘럼</span></h2>
+        <p>10회차 · 30시간 · 기획부터 포트폴리오 완성까지</p>
+      </div>
+      <details class="curr-item" open>
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-cy">DAY 01</span>
+          <span class="curr-title">AI 영상 제작과 프롬프트 작성의 이해</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              AI 영상 제작과정 소개 및 전체 흐름 이해
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              스토리 작성을 위한 LLM 프롬프트 작성법
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              LLM을 활용한 스토리·시나리오·콘티 제작 실습
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">사용 툴: ChatGPT</div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-cy">DAY 02</span>
+          <span class="curr-title">프롬프트를 활용한 AI 이미지 제작</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              AI 이미지 생성을 위한 프롬프트 문법 이해
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              이미지 프롬프트 구조 이해와 실습
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              AI 윤리 및 저작권 이해
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">
+            사용 툴: AI 이미지 생성 도구
+          </div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-cy">DAY 03</span>
+          <span class="curr-title"
+            >이미지 합성을 활용한 시네마틱 키비주얼 제작</span
+          >
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              다양한 장면 연출을 위한 프롬프트 심화학습
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              프롬프트 제너레이터 활용 및 이미지 합성 실습
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">사용 툴: Flow</div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-cy">DAY 04</span>
+          <span class="curr-title">커머셜 이미지 제작 — 캐릭터 일관성</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              AI 이미지 편집으로 광고이미지 스타일 장면 연출
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              일관성 있는 다양한 카메라샷 장면 연출 실습
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">
+            사용 툴: Flow / Dreamina AI
+          </div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-rd">DAY 05</span>
+          <span class="curr-title"
+            >[핵심] AI 영상 콘텐츠용 사운드 미디어 제작</span
+          >
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              AI 음악 생성을 위한 프롬프트 작성 및 주제곡·BGM 제작
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              AI 보이스·효과음 제작 실습
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">
+            사용 툴: Suno AI / Supertone Play / MiniMax Audio / ElevenLabs
+          </div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-rd">DAY 06</span>
+          <span class="curr-title">[핵심] AI 비디오 도구 활용</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              AI 이미지 소스로 동적인 AI 비디오 콘텐츠 제작
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              다양한 비디오 생성 사례 학습 및 Image to Video 실습
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">
+            사용 툴: Kling AI
+          </div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-cy">DAY 07</span>
+          <span class="curr-title">AI 영상 편집</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              AI 미디어 소스를 종합해 최종 산출물 출력
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              AI 비디오·오디오 소스 편집으로 최종 동영상 완성
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">사용 툴: CapCut</div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-cy">DAY 08</span>
+          <span class="curr-title">커머셜 숏폼 영상 기획 및 제작</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              트렌디한 숏폼 제작 사례 분석 및 관련 기술 실습
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+              숏츠·릴스 유행 AI 비디오 스타일 영상 제작 실습
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">
+            사용 툴: Veo3 / Grok
+          </div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-pu">DAY 09</span>
+          <span class="curr-title">완성도 높은 AI 영상 포트폴리오 제작</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              포트폴리오의 중요성과 개인 브랜드 콘셉트 설정
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              최종 포트폴리오용 영상 클립 선별 및 편집
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">사용 툴: CapCut</div>
+        </div>
+      </details>
+      <details class="curr-item">
+        <summary class="curr-sum">
+          <span class="curr-badge curr-badge-pu">DAY 10</span>
+          <span class="curr-title">개별 피드백 및 최종 결과물 보완</span>
+          <svg
+            class="curr-arrow"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <div class="curr-body">
+          <ul class="curr-list">
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              수강생별 최종 포트폴리오 발표 및 피드백
+            </li>
+            <li class="curr-li">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              개인 채널 업로드 및 향후 역량 강화 네트워킹
+            </li>
+          </ul>
+          <div class="proj-tools" style="margin-top: 8px">사용 툴: CapCut</div>
+        </div>
+      </details>
+    </section>
+
+    <div class="div-to-dark"></div>
+
+    <!-- ══════════ INSTRUCTOR (DARK) ══════════ -->
+    <section id="instructor" class="sec fu">
+      <div class="sec-head">
+        <span class="sec-label">INSTRUCTOR</span>
+        <h2>강사 소개</h2>
+      </div>
+      <div class="inst-avatar">🎬</div>
+      <h3 class="inst-name">조동화</h3>
+      <p class="inst-role">AI 영상 크리에이터 강사 · 멀티미디어 전문가</p>
+      <div class="inst-stats">
+        <div class="inst-stat">
+          <div class="inst-stat-num">15+회</div>
+          <div class="inst-stat-lbl">강의 경력</div>
+        </div>
+        <div class="inst-stat">
+          <div class="inst-stat-num">15+년</div>
+          <div class="inst-stat-lbl">실무 경력</div>
+        </div>
+        <div class="inst-stat">
+          <div class="inst-stat-num">50+건</div>
+          <div class="inst-stat-lbl">제작 콘텐츠</div>
+        </div>
+      </div>
+      <p class="inst-bio">
+        멀티미디어 팀장으로 15년 이상 실무를 쌓고, 국내 주요 브랜드
+        (진로하이트·LX하우시스·아모레·금영노래방 등)의 프로모션 콘텐츠를 제작.
+        현재 코리아IT아카데미에서 AI 영상 크리에이터 과정을 강의 중.
+      </p>
+      <div class="inst-meta">
+        <div class="inst-meta-item">
+          <div class="lbl">학력</div>
+          <div class="val">서울디지털대학교 시각디자인 학사</div>
+        </div>
+        <div class="inst-meta-item">
+          <div class="lbl">인증</div>
+          <div class="val">경기콘텐츠진흥원 AI영상창작자 과정 수료 (2024)</div>
+        </div>
+        <div class="inst-meta-item">
+          <div class="lbl">활동</div>
+          <div class="val">코리아IT아카데미 AI영상 크리에이터 과정 강사</div>
+        </div>
+        <div class="inst-meta-item">
+          <div class="lbl">YouTube</div>
+          <div class="val">@상상력공장</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="div-to-light"></div>
+
+    <!-- ══════════ REVIEWS (LIGHT) ══════════ -->
+    <section id="reviews" class="sec sec-light fu">
+      <div class="sec-head">
+        <span class="sec-label">REVIEWS</span>
+        <h2>먼저 수강한 <span class="g-cyan-dk">수강생 후기</span></h2>
+      </div>
+      <div class="rv-summary">
+        <div class="rv-score">4.9</div>
+        <div>
+          <div class="rv-stars">★★★★★</div>
+          <div style="font-size: 11px; color: var(--lt-t3)">847개 후기</div>
+        </div>
+        <div class="rv-div-line"></div>
+        <div>
+          <div class="rv-meta-title">98% 재구매 의향</div>
+          <div class="rv-meta-sub">수료 후 설문</div>
+        </div>
+      </div>
+
+      <div class="rv-list">
+        <div class="rv-card">
+          <div class="rv-stars-sm">★★★★★</div>
+          <p class="rv-text">
+            "AI 도구를 따로따로 써보다가 막혔는데, 한 번에 영상까지 완성해본 게
+            처음이에요. 10일 만에 포트폴리오가 생겼습니다."
+          </p>
+          <div class="rv-author">
+            <div
+              class="rv-av"
+              style="background: rgba(8, 145, 178, 0.1); color: var(--lt-cyan)"
+            >
+              이
+            </div>
+            <div>
+              <div class="rv-name">이지원</div>
+              <div class="rv-title">마케터</div>
+            </div>
+          </div>
+        </div>
+        <div class="rv-card">
+          <div class="rv-stars-sm">★★★★★</div>
+          <p class="rv-text">
+            "강사님이 도구별 한계와 우회법까지 짚어주셔서, 새 AI 도구가 나와도
+            응용할 자신이 생겼어요."
+          </p>
+          <div class="rv-author">
+            <div
+              class="rv-av"
+              style="background: rgba(168, 85, 247, 0.12); color: #9333ea"
+            >
+              박
+            </div>
+            <div>
+              <div class="rv-name">박현수</div>
+              <div class="rv-title">영상 콘텐츠 PD</div>
+            </div>
+          </div>
+        </div>
+        <div class="rv-card">
+          <div class="rv-stars-sm">★★★★</div>
+          <p class="rv-text">
+            "비개발자도 충분히 따라갈 수 있는 난이도. 9일차 포트폴리오 피드백이
+            특히 도움됐습니다."
+          </p>
+          <div class="rv-author">
+            <div
+              class="rv-av"
+              style="background: rgba(255, 71, 87, 0.1); color: #dc2626"
+            >
+              김
+            </div>
+            <div>
+              <div class="rv-name">김민지</div>
+              <div class="rv-title">1인 크리에이터</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="div-to-dark"></div>
+
+    <!-- ══════════ FAQ (DARK) ══════════ -->
+    <section id="faq" class="sec fu">
+      <div class="sec-head">
+        <span class="sec-label">FAQ</span>
+        <h2>자주 묻는 질문</h2>
+      </div>
+      <div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            이 과정에서는 어떤 결과물을 만들게 되나요?<span class="faq-ico"
+              >+</span
+            >
+          </button>
+          <div class="faq-a">
+            나만의 숏폼·커머셜 영상을 완성할 수 있으며, 수료 후에는 개인
+            브랜드나 프로젝트에 활용 가능한 AI 영상 포트폴리오를 제작할 수
+            있습니다.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            수업에서는 어떤 도구를 사용하나요?<span class="faq-ico">+</span>
+          </button>
+          <div class="faq-a">
+            ChatGPT, Gemini, Flow, Grok, Dreamina AI, Suno AI, MiniMax Audio,
+            Supertone Play, ElevenLabs, Kling AI, Veo3, CapCut 등 12종을
+            사용합니다.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            수업 전에 준비해야 할 것은 무엇인가요?<span class="faq-ico">+</span>
+          </button>
+          <div class="faq-a">
+            Google 계정이 필수입니다. 수강 신청 후 별도 안내를 드립니다.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            이 과정은 어떤 방식으로 진행되나요?<span class="faq-ico">+</span>
+          </button>
+          <div class="faq-a">
+            스토리 기획부터 이미지·음악·영상 제작, 최종 편집까지 전 과정을
+            단계별로 체험하는 실습 중심 프로그램입니다. 총 10회차, 회차당 3시간.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            수업 후 결과물을 어디에 활용할 수 있나요?<span class="faq-ico"
+              >+</span
+            >
+          </button>
+          <div class="faq-a">
+            완성된 결과물을 개인 포트폴리오와 온라인 채널에 직접 게시하여
+            실생활·업무·창작 활동에 활용할 수 있습니다.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            이 과정은 어떤 학습 흐름으로 구성되어 있나요?<span class="faq-ico"
+              >+</span
+            >
+          </button>
+          <div class="faq-a">
+            프롬프트 작성 → 이미지 제작 → 이미지 합성 → 커머셜 이미지 제작 →
+            사운드 미디어 제작 → AI 비디오 도구 활용 → 영상 편집 → 숏폼 기획 및
+            제작 → 포트폴리오 제작 → 최종 발표 및 피드백 순으로 구성됩니다.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            Gemini 사용 시 비용이 발생하나요?<span class="faq-ico">+</span>
+          </button>
+          <div class="faq-a">
+            Gemini는 기존 사용 환경에 따라 비용이 발생할 수 있습니다. 사용량이
+            있는 계정보다 별도 계정 활용 여부를 사전에 확인하는 것을 권장합니다.
+          </div>
+        </div>
+        <div class="faq-item" onclick="this.classList.toggle('open')">
+          <button class="faq-q">
+            AI 도구가 계속 바뀌는데 괜찮나요?<span class="faq-ico">+</span>
+          </button>
+          <div class="faq-a">
+            현재 AI 시장은 지속적으로 변화 중입니다. 무료 버전 사용이 불가능해질
+            경우 도구를 변경하거나 불가피한 구독이 생길 수 있습니다. 강의 내용도
+            시장 변화에 맞춰 업데이트됩니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PRICING (DARK) ══════════ -->
+    <section id="pricing" class="sec fu">
+      <div class="sec-head">
+        <span class="sec-label">LIMITED OFFER</span>
+        <h2>
+          가장 저렴하게 수강하는<br /><span class="g-red">마지막 기회</span>
+        </h2>
+        <p>마감 시 정가 500,000원으로 즉시 인상</p>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-banner">✦ EARLY BIRD PACK ✦</div>
+        <div class="pricing-body">
+          <h3>AI 영상 크리에이터 10일 과정</h3>
+          <ul class="pricing-checks">
+            <li class="p-check">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7" /></svg
+              >AI 영상 제작 전 과정을 단계별로 체험
+            </li>
+            <li class="p-check">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7" /></svg
+              >생성형 AI 도구 12종 직접 활용
+            </li>
+            <li class="p-check">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7" /></svg
+              >AI 기반 숏폼·커머셜 영상 제작 역량 완성
+            </li>
+            <li class="p-check">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7" /></svg
+              >개인 포트폴리오·온라인 채널 게시 수준 달성
+            </li>
+            <li class="p-check">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 13l4 4L19 7" /></svg
+              >AI 영상 공모전 도전 가능한 실전형 역량
+            </li>
+          </ul>
+          <div class="pricing-price-box">
+            <div class="pr-orig">500,000원</div>
+            <div class="pr-price">350,000<small>원</small></div>
+            <div class="pr-badge">30% 단독 할인</div>
+          </div>
+          <button
+            class="btn-final shim"
+            onclick="
+              document
+                .getElementById('pricing')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            수강 신청하기 →
+          </button>
+          <div class="pricing-note">
+            <span>💳 12개월 무이자 (월 29,166원)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <svg
+          width="16"
+          height="16"
+          fill="none"
+          stroke="var(--cyan)"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            stroke-linejoin="round"
+          /></svg
+        >코리아AI<span>아카데미</span>
+      </div>
+      <p class="footer-desc">
+        코리아AI아카데미 | 대표: 홍길동 | 사업자번호: 123-45-67890<br />서울특별시
+        강남구 테헤란로 123<br />02-1234-5678 | contact@korea-ai-academy.example
+      </p>
+      <div class="footer-cols">
+        <div>
+          <div class="footer-col-title">강의</div>
+          <div class="footer-links">
+            <a href="#">AI 영상 크리에이터</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">지원</div>
+          <div class="footer-links">
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 코리아AI아카데미</span>
+      </div>
+    </footer>
+
+    <!-- 하단 고정 CTA -->
+    <div
+      class="mobile-cta"
+      id="mcta"
+      style="transform: translateY(100%); transition: transform 0.3s"
+    >
+      <div class="mcta-top">
+        <span class="mcta-disc">30%</span>
+        <span class="mcta-price">350,000<small>원</small></span>
+      </div>
+      <button
+        class="btn-mcta shim"
+        onclick="
+          document
+            .getElementById('pricing')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        수강 신청하기 →
+      </button>
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
