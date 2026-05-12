@@ -1,33 +1,38 @@
 /* ══════════════════════════════
    WHY (LIGHT)
 ══════════════════════════════ */
-.why-list { display:flex; flex-direction:column; gap:12px; }
+.why-list {
+  display:flex; flex-direction:row; gap:14px;
+  overflow-x:auto; scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  padding:4px 0 12px;
+}
+.why-list::-webkit-scrollbar { display:none; }
+
 .why-card {
-  padding:24px 20px; border-radius:var(--r-lg);
+  flex:0 0 72vw; max-width:300px;
+  scroll-snap-align:start;
+  display:flex; flex-direction:column;
+  padding:22px 20px 20px; border-radius:var(--r-lg);
   background:var(--lt-bg-2);
   border:1px solid var(--lt-bd);
   position:relative; overflow:hidden;
   box-shadow:0 1px 3px rgba(15,23,42,.04);
 }
-.why-card::before {
-  content:''; position:absolute; top:0; left:0; right:0; height:3px;
-  background:linear-gradient(90deg,var(--lt-cyan),#06b6d4);
-  opacity:.5;
-}
-.why-illust {
-  width:56px; height:56px; border-radius:14px;
-  background:linear-gradient(135deg,var(--lt-cyan-bg),rgba(6,182,212,.04));
-  display:flex; align-items:center; justify-content:center;
-  margin-bottom:14px;
-}
-.why-illust svg { width:28px; height:28px; color:var(--lt-cyan); }
-.why-card h3 { font-size:17px; font-weight:800; margin-bottom:6px; color:var(--lt-t1); letter-spacing:-.3px; }
-.why-card p  { font-size:13px; color:var(--lt-t2); line-height:1.7; }
-.why-stat {
-  display:inline-flex; align-items:center; gap:6px;
-  margin-top:14px; padding:5px 10px; border-radius:100px;
+.why-num {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:28px; height:28px; border-radius:50%;
   background:var(--lt-cyan-bg); color:var(--lt-cyan);
-  font-size:11.5px; font-weight:700;
+  font-size:13px; font-weight:800;
+  margin-bottom:12px;
 }
-.why-stat svg { width:12px; height:12px; }
+.why-card h3 { font-size:17px; font-weight:800; margin-bottom:8px; color:var(--lt-t1); letter-spacing:-.3px; padding-left:4px; }
+.why-card p  { font-size:13px; color:var(--lt-t2); line-height:1.7; margin-bottom:16px; word-break:keep-all; padding-left:4px; }
+.why-img {
+  margin-top:auto; width:100%; height:160px;
+  object-fit:cover; border-radius:var(--r);
+  background:var(--lt-bd-md);
+  display:block;
+}
 

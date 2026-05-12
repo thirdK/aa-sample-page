@@ -12,6 +12,7 @@
 .hero-glow-1 { position:absolute; width:320px; height:320px; top:-60px; left:-60px; border-radius:50%; background:radial-gradient(circle,rgba(79,172,254,.1),transparent 70%); pointer-events:none; filter:blur(40px); }
 .hero-glow-2 { position:absolute; width:240px; height:240px; bottom:0; right:-40px; border-radius:50%; background:radial-gradient(circle,rgba(168,85,247,.07),transparent 70%); pointer-events:none; filter:blur(40px); }
 
+.badge-eb[data-promo="off"] { display:none; }
 .badge-eb {
   display:inline-flex; align-items:center; gap:8px;
   padding:7px 14px; border-radius:100px;

@@ -1,6 +1,7 @@
 /* ══════════════════════════════
    PRICING (DARK)
 ══════════════════════════════ */
+#pricing[data-offer="off"] { display:none; }
 .pricing-card {
   border-radius: var(--r-lg);
   overflow: hidden;
